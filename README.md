@@ -8,7 +8,7 @@ A simple static web project created for practicing AWS services. This repository
 > [!IMPORTANT]
 > **Project Resources Note**: All AWS resources for the `aws-s3-cloudfront-cicd-site` project have been deleted to prevent ongoing costs. For a detailed reference and project showcase, please visit the [Project Showcase Documentation](https://jeffjojerjonescatulay.github.io/project-docu-pages/aws-s3-cloudfront-cicd-site/index.html).
 
-![AWS Static Web CI/CD Architecture](aws-s3-cloudfront-cicd-site/architecture.png)
+![AWS Static Web CI/CD Architecture](https://jeffjojerjonescatulay.github.io/aws-static-web/aws-s3-cloudfront-cicd-site/architecture.png)
 *AWS Static Web CI/CD Architecture - aws-s3-cloudfront-cicd-site*
 
 ## 🛠️ Tech Stack
