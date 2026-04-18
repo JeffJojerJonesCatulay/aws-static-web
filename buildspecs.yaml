@@ -4,14 +4,14 @@ phases:
   build:
     commands:
       - echo "Preparing production artifacts..."
-      - mkdir dist
-      - cp index.html dist/
+      - mkdir html
+      - cp index.html html/
   post_build:
     commands:
       - echo "Build completed on `date`"
 
 artifacts:
   files:
-    - '**/*'
-  base-directory: dist
-  discard-paths: yes
+    - '**/*.html'
+  base-directory: 'html'
+  discard-paths: no
