@@ -3,9 +3,10 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Build phase started"
-      - ls -la
-      - "[ -f index.html ] && echo 'index.html found' || echo 'index.html NOT found'"
+      - echo "Preparing production artifacts..."
+      - mkdir dist
+      - cp index.html dist/
+      - ls -la dist/
   post_build:
     commands:
       - echo "Build completed on `date`"
@@ -13,4 +14,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  discard-paths: no
+  base-directory: dist
+  discard-paths: yes
