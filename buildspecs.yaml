@@ -3,9 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "No compilation required for this static website."
-      - echo "Current directory content:"
-      - ls -la
+      - echo "Preparing production artifacts..."
+      - mkdir dist
+      - cp index.html dist/
   post_build:
     commands:
       - echo "Build completed on `date`"
