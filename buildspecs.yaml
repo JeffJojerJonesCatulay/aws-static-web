@@ -13,6 +13,4 @@ phases:
 artifacts:
   files:
     - index.html
-    - README.md
-    - '**/*'
   discard-paths: no
