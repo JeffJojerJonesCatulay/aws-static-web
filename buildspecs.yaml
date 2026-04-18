@@ -3,14 +3,14 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "No compilation required for this static website."
-      - echo "Current directory content:"
+      - echo "Build phase started"
       - ls -la
+      - "[ -f index.html ] && echo 'index.html found' || echo 'index.html NOT found'"
   post_build:
     commands:
       - echo "Build completed on `date`"
 
 artifacts:
   files:
-    - index.html
+    - '**/*'
   discard-paths: no
