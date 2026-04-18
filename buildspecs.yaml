@@ -5,7 +5,6 @@ phases:
     commands:
       - echo "No compilation required for this static website."
       - echo "Validating directory structure..."
-      - ls -R html/
   post_build:
     commands:
       - echo "Build completed on `date`"
@@ -13,5 +12,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'html'
   discard-paths: no
