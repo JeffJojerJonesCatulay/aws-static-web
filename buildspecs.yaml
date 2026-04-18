@@ -4,12 +4,15 @@ phases:
   build:
     commands:
       - echo "No compilation required for this static website."
-      - echo "Validating directory structure..."
+      - echo "Current directory content:"
+      - ls -la
   post_build:
     commands:
       - echo "Build completed on `date`"
 
 artifacts:
   files:
+    - index.html
+    - README.md
     - '**/*'
   discard-paths: no
